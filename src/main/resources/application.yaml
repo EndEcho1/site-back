@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: echo
+  data:
+
+    mongodb:
+      uri: mongodb://echo:echo@localhost:27017/?authSource=admin&retryWrites=false&retryReads=false  # MongoDB 连接 URI
+      database: BlueArchiver # 默认数据库名称
+      auto-index-creation: true # 自动创建索引
+
+    Redis:
+      host: localhost
+      port: 6379
+
+
+
+
+
