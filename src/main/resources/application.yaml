@@ -2,6 +2,10 @@ server:
   port: 8081
 
 
+logging:  #有 ERROR, WARN, INFO, DEBUG, TRACE 五个标准级别，优先级从高到低
+    level:
+      root: DEBUG
+
 spring:
   application:
     name: echo
@@ -15,6 +19,10 @@ spring:
     Redis:
       host: localhost
       port: 6379
+
+
+
+
 
 
 
