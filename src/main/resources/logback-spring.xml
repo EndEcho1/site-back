@@ -19,7 +19,7 @@
     <appender name="FILE_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/I/logs-echo-I.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs-echo-I-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/I/logs-echo-I-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -34,7 +34,7 @@
     <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/E/logs-echo-E.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs-echo-E-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/E/logs-echo-E-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -47,7 +47,7 @@
     <appender name="FILE_TRACE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/T/logs-echo-T.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs-echo-T-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/T/logs-echo-T-%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -61,17 +61,17 @@
     </appender>
 
 
-    <!-- Logstash 输出 -->
+    <!-- Logstash 输出
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>localhost:5044</destination>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+       <destination>localhost:5044</destination>
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
     <appender name="ASYNC_LOGSTASH" class="ch.qos.logback.classic.AsyncAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>WARN</level>
         </filter>
         <appender-ref ref="LOGSTASH" />
-    </appender>
+    </appender>-->
 
     <!-- 日志级别配置 -->
     <root level="DEBUG">
