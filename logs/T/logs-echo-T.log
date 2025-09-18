@@ -1,0 +1,5 @@
+2025-09-17 18:01:08.978 [restartedMain] TRACE o.s.w.s.s.s.WebSocketHandlerMapping - Mapped [/ws/chat] onto org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@59553808
+2025-09-17 18:03:43.270 [restartedMain] TRACE o.s.w.s.s.s.WebSocketHandlerMapping - Mapped [/ws/chat] onto org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@53738a33
+2025-09-17 18:06:58.023 [restartedMain] TRACE o.s.w.s.s.s.WebSocketHandlerMapping - Mapped [/ws/chat] onto org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@7b679c4
+2025-09-17 18:08:22.040 [restartedMain] TRACE o.s.w.s.s.s.WebSocketHandlerMapping - Mapped [/ws/chat] onto org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@1d96ef3f
+2025-09-17 18:11:47.081 [restartedMain] TRACE o.s.w.s.s.s.WebSocketHandlerMapping - Mapped [/ws/chat] onto org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@625cafcd
